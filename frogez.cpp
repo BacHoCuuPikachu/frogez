@@ -26,8 +26,8 @@ signed main()
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= k; j++) {
             if (i - b[j] < 0) break;
-            dp[i] = (dp[i] + dp[i - b[j]]) % mod; // có thể tới i từ i - b[i],
-                                                  // với mỗi cách tới i - b[i],
+            dp[i] = (dp[i] + dp[i - b[j]]) % mod; // có thể tới i từ i - b[j],
+                                                  // với mỗi cách tới i - b[j],
                                                   // ta có thêm 1 cách tới i.
         }
     }
